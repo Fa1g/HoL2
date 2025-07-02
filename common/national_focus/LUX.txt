@@ -13,13 +13,25 @@ focus_tree = {
 
 
 	focus = {
-        id = Start
-        icon = GFX_goal_generic_construct_civ_factory
-        x = 8 #По горизонтали
-        y = 0 #По вертикали
-        cost = 10  
-        completion_reward = {
-            add_political_power = 150
+            id = Start
+            icon = GFX_goal_generic_construct_civ_factory
+            cost = 10  
+            x = 8 #По горизонтали
+            y = 0 #По вертикали
+            completion_reward = {
+                  add_political_power = 150
         }
-      }   
+      }  
+
+      focus = {
+            id = 2
+            icon = GFX_surrender_tiny_flag
+            cost = 10
+            x = 8
+            y = 1
+            prerequisite = { focus = Start }
+            completion_reward = {
+
+             }
+      } 
 }

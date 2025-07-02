@@ -1,0 +1,25 @@
+focus_tree = {        
+      id = LUX_focus ##Пример germen_focus
+      
+       country = {
+		factor = 1 #0 = для всех стран, 1 = для одной
+            modifier = {
+                  tag = LUX
+            }
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+
+
+	focus = {
+        id = Start
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 8 #По горизонтали
+        y = 0 #По вертикали
+        cost = 10  
+        completion_reward = {
+            add_political_power = 150
+        }
+      }   
+}
